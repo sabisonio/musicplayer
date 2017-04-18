@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                Log.d("tag", "播放完毕");
+                Log.d("tag", "播放完毕！");
 //                Log.d("tt",musicList.get());
 
             }
