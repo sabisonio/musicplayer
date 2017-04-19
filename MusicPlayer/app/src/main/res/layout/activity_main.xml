@@ -9,11 +9,51 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.sonio.musicplayer.MainActivity">
+    <TextView
+        android:text="音乐列表"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
     <ListView
         android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="45dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:stackFromBottom="false"
+        android:transcriptMode="alwaysScroll"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/controlPannel"
+        android:layout_below="@+id/listView"
+        android:layout_marginLeft="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/preSong"
+            android:src="@drawable/arrow_left_32x32"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/controlPlay"
+            android:layout_toRightOf="@+id/preSong"
+            android:src="@drawable/play_alt_32x32"
+            android:layout_marginLeft="50dp"
+
+            />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/nextSong"
+            android:layout_toRightOf="@+id/controlPlay"
+            android:src="@drawable/arrow_right_32x32"
+            android:layout_marginLeft="50dp"/>
+    </RelativeLayout>
 </RelativeLayout>

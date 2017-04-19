@@ -6,20 +6,20 @@
     android:paddingLeft="10dip">
 
     <TextView
+        android:text="@string/song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/song_name"
+        android:textSize="20dip"/>
+    <TextView
         android:text="@string/singer_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/singer_name"
-        android:textSize="20dip"/>
-
-    <TextView
-        android:text="@string/song_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/song_name" />
+        />
     <TextView
         android:visibility="invisible"
-        android:text="@string/song_name"
+        android:text="@string/singer_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/file_path" />

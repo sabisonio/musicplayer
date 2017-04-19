@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private String song_name;
 
     final MediaPlayer mp= new MediaPlayer();
+    private ImageView controlPlay =(ImageView) findViewById(R.id.controlPlay);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 musicList.add(map);
             }
         }
+
 
         System.out.println(musicList.size());
 
